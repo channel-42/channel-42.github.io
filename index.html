@@ -51,6 +51,9 @@ $(document).ready(function(){
                     <li><a href="#contact">contact<a/></li>
                 </ul>
             </nav>
+          <div id="scroll-ind">
+            <div id="progress-bar"></div>
+          </div>
         </header>
         <section id="home">
            
@@ -60,7 +63,18 @@ $(document).ready(function(){
             <h2>automotive comp.sci student</h2>
             <a href="#about"><img src="source/arrow.png" alt="down"></a>
             </div>
-            
+            <script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progress-bar").style.width = scrolled + "%";
+}
+</script>
+
         </section>
         <section id="about">
             <h3>about</h3>
@@ -78,8 +92,8 @@ $(document).ready(function(){
             <div id="projects-div">
                 <ul>
                     <li><a href="https://github.com/channel-42/hue-tui"><img src="https://repository-images.githubusercontent.com/250581922/d2d0ce00-7775-11ea-9377-7a3b3d153045" alt="project1"></a></li>
-                    <li><a href=""><img src="http://via.placeholder.com/400x200" alt="project2"></a></li>
-                    <li><a href=""><img src="http://via.placeholder.com/400x200" alt="project3"></a></li>
+                    <li><a href=""><img src="https://repository-images.githubusercontent.com/249658807/1eee5080-78e5-11ea-8abd-4c3bee68e521" alt="project2"></a></li>
+                    <li><a href=""><img src="https://repository-images.githubusercontent.com/247750735/49410d80-78e7-11ea-85b3-96ced34d95b8" alt="project3"></a></li>
                     <li><a href=""><img src="http://via.placeholder.com/400x200" alt="project4"></a></li>
 
                 </ul>

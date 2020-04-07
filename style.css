@@ -66,7 +66,6 @@ header {
   size: 10%;
   float: left;
   margin: 10px 0 0 50px;
-
 }
 
 #logo img {
@@ -81,28 +80,30 @@ header nav {
   align-items: center;
   float: right;
   margin: 0 2% 0 0;
-
 }
 
 header nav ul li {
   float: left;
   margin-left: 25px;
-
 }
 header nav ul li:hover {
   opacity: 40%;
 }
 header nav ul li a{
   margin-right: 16px;
-
 }
 
-.head_blur {
-  backdrop-filter: blur(10px);
+#scroll-ind {
   width: 100%;
-  height: 100%;
+  height: 8px;
   background: white;
-  transform: translatez(0);
+}
+
+#progress-bar {
+  height: 8px;
+  background: #a0a0a0;
+  width: 0;
+
 }
 
 /* HOME */
@@ -117,8 +118,8 @@ header nav ul li a{
   position: relative;
   width: 100%;
   height: 100vh;
-
 }
+
 .main h1 {
   margin: 0 auto 0 auto;
   bottom: 50%;
@@ -128,8 +129,8 @@ header nav ul li a{
   font-size: 450%;
   text-shadow: 5px 5px 10px #000000;
   position: absolute;
-
 }
+
 .main h2 {
   margin: auto;
   color: #f0f0f0;
@@ -139,8 +140,8 @@ header nav ul li a{
   position: absolute;
   bottom: 45%;
   left: 50%;
-
 }
+
 #home img{ transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
 
 #home img {
