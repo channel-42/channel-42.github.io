@@ -106,9 +106,8 @@ header nav ul li a{
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
 }
-
-#navbar i {
-  display: none !important;
+#navbar .fa {
+    display: none;
 }
 
 /* HOME */
@@ -180,13 +179,13 @@ header nav ul li a{
 }
 
 #about h4 {
-  font-size: 30px;
+  font-size: 40pt;
 }
 
 #about p {
   width: 70%;
   margin: 0 auto 0 auto;
-  font-size: 20px;
+  font-size: 25pt;
   text-align: justify;
 
 }
@@ -257,6 +256,9 @@ footer p {
   #projects-div img {
   width: 90%;
   }
+  #about p {
+    width: 40%;
+  }
 }
 
 @media (max-aspect-ratio: 3/4){
@@ -267,16 +269,39 @@ footer p {
     margin: 0;
     float: none;
   }
-  #navbar i{
-    display: flex;
-    font-size: 100em;
+  header nav ul {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    cursor: pointer;
-    text-align: right;
-    float: right;
-    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -5%);
+    background: #ffffff;
+    box-shadow: 4px 10px 10px rgba(0,0,0,0.3);
+    left: 50%;
+    top: 7em;
+  }
+  header nav ul li a {
+    font-size: 40pt;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    margin: 0;
+  }
+
+  header nav ul li {
+    padding: 1em 0;
+    width: 100%;
+  }
+  header nav ul.open {
+    height:auto;
 
   }
+  #logo {
+    width: 60%;
+    float: left;
+    text-align: left;
+  }
+
   #projects-div {
     width: 95%;
   }
@@ -290,4 +315,36 @@ footer p {
   display: flex;
   flex-direction: column;
   }
+  #about p {
+  font-size: 24pt;
+
+  }
+  #navbar .fa { transition: all 400ms; -webkit-transition: all 400ms; -moz-transition: all 400ms; -o-transition: all 400ms;}
+  #navbar .fa {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    top: 0%;
+    left: 0%;
+    float: left;
+    transform: translate(0, 30%);
+
+  }
+  #navbar .fa:hover {
+    opacity: 0.7;
+  }
+  #scroll-ind {
+    top: 100%;
+    position: absolute;
+  }
+  #burger {
+    position: relative;
+    width: 100%;
+    height:100%;
+    margin: 0;
+  }
+  
 }
